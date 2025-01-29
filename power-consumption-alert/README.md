@@ -2,6 +2,9 @@
 
 This guide will show you how to set up an **automation that sends a notification** with the **top 5 power-consuming devices** when total power consumption exceeds a certain threshold.
 
+![Power Consumption Alert](images/Energy-alert.jpeg) ![Power Consumption Alert](images/Energy-alert-heb.jpeg)
+---
+
 ## 🛠️ Requirements
 ✅ **Power monitoring sensors for individual devices** (Shelly, Tasmota, Sonoff, etc.)  
 ✅ **Home Assistant with notification service configured (App, Telegram, etc.)**  
