@@ -4,6 +4,7 @@ This guide will walk you through **creating a custom slider in Lovelace** that a
 When you turn on the boiler, it will **pull the selected time from the slider** and automatically turn off when the timer expires.  
 Additionally, we will reset the slider to a default value when the boiler turns off.
 
+![Boiler_Slider_Timer](images/boiler_control_heb.png) ![Boiler_Slider_Timer](images/boiler_control.png)
 ---
 
 ## 🛠️ **Requirements**
