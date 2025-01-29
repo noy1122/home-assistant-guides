@@ -6,7 +6,7 @@ This repository contains step-by-step tutorials for enhancing your smart home ex
 ## 📌 Available Guides  
 1. **[Boiler Temperature Card](boiler-temperature-card/README.md)** – Custom card for monitoring boiler temperature and shower availability.  
 2. **[Boiler Slider Timer](boiler_slider_timer/README.md)** – Set a custom timer for boiler activation using a slider.
-   - 🇮🇱 [מדריך בעברית](boiler_slider_time/עברית/README.md)  
+   - 🇮🇱 [מדריך בעברית](boiler_slider_timer/עברית/README.md)  
 4. **[Smart Shopping List](smart-shopping-list/README.md)** – Create a dynamic shopping list with custom product buttons and images.  
    - 🇮🇱 [מדריך בעברית](smart-shopping-list/עברית/README.md)  
 
