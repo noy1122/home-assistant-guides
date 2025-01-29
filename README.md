@@ -4,16 +4,14 @@
 This repository contains step-by-step tutorials for enhancing your smart home experience using Home Assistant.  
 
 ## 📌 Available Guides  
-1. **[Boiler Temperature Card](boiler-temperature-card/README.md)** – Custom card for monitoring boiler temperature and shower availability. 
+1. **[Boiler Temperature Card](boiler-temperature-card/README.md)** – Custom card for monitoring boiler temperature and shower availability.  
+   - 🇮🇱 **מדריך בעברית:** [כרטיס טמפרטורת הדוד עם חיווי צבעוני וזמינות מקלחות](boiler-temperature-card/עברית/README.md)  
 
-*(כרטיס טמפרטורת הדוד עם חיווי צבעוני וזמינות מקלחות)*  
-   - 🇮🇱 [מדריך בעברית](boiler-temperature-card/עברית/README.md)  
-   
-2. **[Boiler Slider Timer](boiler_slider_timer/README.md)** – Set a custom timer for boiler activation using a slider. *(טיימר הפעלת הדוד בהתאמה אישית עם סליידר)*  
-   - 🇮🇱 [מדריך בעברית](boiler_slider_timer/עברית/README.md)  
+2. **[Boiler Slider Timer](boiler_slider_timer/README.md)** – Set a custom timer for boiler activation using a slider.  
+   - 🇮🇱 **מדריך בעברית:** [טיימר הפעלת הדוד בהתאמה אישית עם סליידר](boiler_slider_timer/עברית/README.md)  
 
-3. **[Smart Shopping List](smart-shopping-list/README.md)** – Create a dynamic shopping list with custom product buttons and images. *(רשימת קניות חכמה עם כפתורי מוצרים ותמונות מותאמות אישית)*  
-   - 🇮🇱 [מדריך בעברית](smart-shopping-list/עברית/README.md)  
+3. **[Smart Shopping List](smart-shopping-list/README.md)** – Create a dynamic shopping list with custom product buttons and images.  
+   - 🇮🇱 **מדריך בעברית:** [רשימת קניות חכמה עם כפתורי מוצרים ותמונות מותאמות אישית](smart-shopping-list/עברית/README.md)  
 
 ## 🔹 How to Use These Guides  
 Each guide is in its own folder and contains:  
