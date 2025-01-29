@@ -1,12 +1,13 @@
-# 🏠 Home Assistant Guides
-🚀 A collection of Home Assistant guides, automation setups, and YAML configurations.
+# 🏠 Home Assistant Guides  
+🚀 A collection of Home Assistant guides, automation setups, and YAML configurations.  
 
-This repository contains step-by-step tutorials for enhancing your smart home experience using Home Assistant.
+This repository contains step-by-step tutorials for enhancing your smart home experience using Home Assistant.  
 
-## 📌 Available Guides
-1. **[Boiler Temperature Card](boiler-temperature-card/README.md)** – Custom card for monitoring boiler temperature and shower availability.
-2. **[Boiler Slider Timer](boiler_slider_timer/README.md)** – Set a custom timer for boiler activation using a slider.
-
+## 📌 Available Guides  
+1. **[Boiler Temperature Card](boiler-temperature-card/README.md)** – Custom card for monitoring boiler temperature and shower availability.  
+2. **[Boiler Slider Timer](boiler_slider_timer/README.md)** – Set a custom timer for boiler activation using a slider.  
+3. **[Smart Shopping List](smart-shopping-list/README.md)** – Create a dynamic shopping list with custom product buttons and images.  
+   - 🇮🇱 [מדריך בעברית](smart-shopping-list/עברית/README.md)  
 
 ## 🔹 How to Use These Guides
 Each guide is in its own folder and contains:
