@@ -13,6 +13,9 @@ This repository contains step-by-step tutorials for enhancing your smart home ex
 3. **[Smart Shopping List](smart-shopping-list/README.md)** – Create a dynamic shopping list with custom product buttons and images.  
    - 🇮🇱 **מדריך בעברית:** [רשימת קניות חכמה עם כפתורי מוצרים ותמונות מותאמות אישית](smart-shopping-list/עברית/README.md)  
 
+4. **[Power Consumption Alert](power-consumption-alert/README.md)** – Get alerts for high power consumption and top-consuming devices.  
+   - 🇮🇱 **מדריך בעברית:** [התראה על צריכת חשמל גבוהה והצגת 5 הצרכנים הגדולים](power-consumption-alert/עברית/README.md)  
+
 ## 🔹 How to Use These Guides  
 Each guide is in its own folder and contains:  
 - **README.md** → Full instructions with images.  
