@@ -203,4 +203,4 @@ entities:
 ## 📬 **Need Help?**  
 If you have any questions or want to improve this setup, feel free to open an issue or submit a pull request! 🚀  
 
-📸 **Upload a screenshot of your Lovelace dashboard in action!**  
+
