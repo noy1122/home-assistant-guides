@@ -58,17 +58,17 @@ Now, we will create an **automation** that ensures when the boiler is turned on,
 📌 **Add this to `automations.yaml`:**  
 
 ```yaml
-- alias: "Start Boiler with Selected Time"
+- alias: "Start Boiler Timer from Slider"
   trigger:
     - platform: state
       entity_id: switch.boiler
       to: "on"
   action:
     - service: timer.start
-      target:
-        entity_id: timer.boiler_timer
+      entity_id: timer.boiler_timer
       data:
-        duration: "{{ states('input_number.boiler_duration') | int }}:00"
+        duration: >
+          {{ (states('input_number.boiler_duration') | int // 60) | string | default('00') }}:{{ (states('input_number.boiler_duration') | int % 60) | string | default('00') }}:00
 ```
 
 📌 **How it works?**  
