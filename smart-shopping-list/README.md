@@ -4,6 +4,12 @@
 This guide will walk you through creating a **smart shopping list** with **image-based product buttons**.  
 Tapping a product **automatically adds it to the shopping list** in Home Assistant.  
 
+| ![Smart Shopping List](images/shopping.png) | ![Smart Shopping List](images/shopping2.png) |
+|--------------------------------------------|--------------------------------------------|
+
+
+
+
 ---
 
 ## **🛠️ Requirements**  
