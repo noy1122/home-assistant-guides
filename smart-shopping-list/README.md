@@ -153,7 +153,6 @@ To ensure images are displayed correctly, upload them manually to `/local/`.
 ✅ **Optimized layout with `grid` and `shopping-list`**  
 
 📬 **Have questions or suggestions? Let us know in the comments!**  
-📸 **Share your setup with screenshots!**  
 
 ---
 
