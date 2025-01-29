@@ -4,7 +4,7 @@
 This repository contains step-by-step tutorials for enhancing your smart home experience using Home Assistant.
 
 ## 📌 Available Guides
-
+1. **[Boiler Temperature Card](boiler-temperature-card/README.md)** – Custom card for monitoring boiler temperature and shower availability.
 
 ## 🔹 How to Use These Guides
 Each guide is in its own folder and contains:
