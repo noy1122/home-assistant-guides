@@ -5,7 +5,7 @@ This repository contains step-by-step tutorials for enhancing your smart home ex
 
 ## 📌 Available Guides
 1. **[Boiler Temperature Card](boiler-temperature-card/README.md)** – Custom card for monitoring boiler temperature and shower availability.
-2. **[Boiler Slider Timer](boiler-slider-timer/README.md)** – Set a custom timer for boiler activation using a slider.
+2. **[Boiler Slider Timer](boiler_slider_timer/README.md)** – Set a custom timer for boiler activation using a slider.
 
 
 ## 🔹 How to Use These Guides
