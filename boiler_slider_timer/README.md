@@ -108,16 +108,21 @@ To ensure that the slider **resets to a default value** every time the boiler tu
 
 ```yaml
 - alias: "Reset Boiler Timer Slider on Shutdown"
-  trigger:
-    - platform: state
-      entity_id: switch.boiler
-      to: "off"
-  action:
-    - service: input_number.set_value
-      target:
-        entity_id: input_number.boiler_duration
-      data:
-        value: 30
+  triggers:
+  - entity_id: switch.boiler
+    to: 'off'
+    trigger: state
+  actions:
+  - target:
+      entity_id: input_number.boiler_duration
+    data:
+      value: 30
+    action: input_number.set_value
+  - action: timer.finish
+    metadata: {}
+    data: {}
+    target:
+      entity_id: timer.boiler_timer
 ```
 
 📌 **What it does?**  
