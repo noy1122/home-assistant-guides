@@ -2,6 +2,8 @@
 
 This guide will walk you through creating a **fully customized Lovelace card** for **boiler temperature monitoring** with **dynamic color indicators, an adaptive icon, and real-time shower availability based on temperature**.
 
+![Boiler Temperature Card](images/boiler-temp-english.png) ![Boiler Temperature Card](images/boiler-temp-heb.png)
+
 ---
 
 ## 🛠️ Requirements  
