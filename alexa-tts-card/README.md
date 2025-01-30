@@ -2,7 +2,7 @@
 
 This guide will show you how to **set up a Lovelace card** that integrates Alexa **with text-to-speech (TTS)**, allowing you to send custom messages to your Echo device.  
 
-![Alexa Mini Media Player](images/alexa-mini-media-player.png)  
+![Alexa Mini Media Player](images/ALEXA.png)  
 
 ---
 
