@@ -2,7 +2,7 @@
 
 כיצד **להגדיר כרטיס Lovelace מותאם אישית** שמשלב **אלכסה עם טקסט לדיבור (TTS)**, כך שתוכל לשלוח הודעות ישירות לרמקול האקו שלך.  
 
-![Alexa Mini Media Player](images/alexa-mini-media-player.png)  
+![Alexa Mini Media Player](images/ALEXA.png)  
 
 ---
 
@@ -62,7 +62,6 @@ tts:
 
 ### 📌 מה צריך לשנות?  
 ➡️ עדכן את **`entity: media_player.noy_s_2nd_echo_dot_2`** כך שיתאים לשם של הרמקול שלך.  
-➡️ ודא ש-**`platform: alexa`** מוגדר נכון עבור תמיכה ב-TTS.  
 ➡️ ניתן לשנות את **האייקון או הצגת העטיפה** לפי העדפה אישית.  
 
 ---
@@ -73,7 +72,7 @@ tts:
 📌 **כיצד להשתמש?**  
 1️⃣ פתח את לוח הבקרה של Lovelace  
 2️⃣ לחץ על שדה **הכנסת טקסט ב-TTS**  
-3️⃣ הקלד הודעה כלשהי (למשל: "ארוחת ערב מוכנה!")  
+3️⃣ הקלד הודעה כלשהי (למשל: "Hello")  
 4️⃣ Alexa תשמיע את ההודעה בקול  
 
 ---
