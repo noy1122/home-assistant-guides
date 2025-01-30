@@ -2,7 +2,8 @@
 
 This guide will show you how to set up an **automation that sends a notification** with the **top 5 power-consuming devices** when total power consumption exceeds a certain threshold.
 
-![Power Consumption Alert](images/Energy-alert.jpeg) ![Power Consumption Alert](images/Energy-alert-heb.jpeg)
+<img src="images/Energy-alert.jpeg" alt="Power Consumption Alert" width="50%">  
+<img src="images/Energy-alert-heb.jpeg" alt="Power Consumption Alert Hebrew" width="50%">
 ---
 
 ## 🛠️ Requirements
