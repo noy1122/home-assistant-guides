@@ -202,5 +202,6 @@ entities:
 
 ## 📬 **Need Help?**  
 If you have any questions or want to improve this setup, feel free to open an issue or submit a pull request! 🚀  
-
+📣 **Join our Facebook group:**  **Home Assistant - קהילה ומדריכים** 
+🔗 **https://www.facebook.com/groups/homeassistant.israel**  
 
