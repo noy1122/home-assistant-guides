@@ -140,3 +140,5 @@ label: |
 If you have questions or want to improve this setup, feel free to open an issue or submit a pull request! 🚀  
 
 🔗 **Follow for more Home Assistant projects!**  
+📣 **Join our Facebook group:**  **Home Assistant - קהילה ומדריכים** 
+🔗 **https://www.facebook.com/groups/homeassistant.israel**  
