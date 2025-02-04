@@ -1,1 +1,93 @@
+#################################################################
+# 🔥 Home Assistant - טיימר חכם לדוד עם סליידר
+# 🚀 תיאור: שליטה על הדוד עם טיימר מתקדם, כיבוי אוטומטי וסליידר
+#################################################################
 
+# ✅ 1. טיימר לדוד
+timer:
+  boiler_timer:
+    duration: "00:30:00"
+    name: "⏳ טיימר הדוד"
+    icon: mdi:timer-outline
+
+# ✅ 2. סליידר לקביעת משך ההפעלה
+input_number:
+  boiler_duration:
+    name: "⏱️ משך הפעלת הדוד"
+    min: 5
+    max: 120
+    step: 5
+    unit_of_measurement: "דקות"
+    mode: slider
+    icon: mdi:clock-outline
+
+# ✅ 3. אוטומציות להפעלת הדוד וכיבוי אוטומטי
+automation:
+  - alias: "🚀 הפעלת הדוד לפי סליידר"
+    description: "כשהדוד נדלק, מפעיל טיימר עם משך מותאם אישית"
+    trigger:
+      - platform: state
+        entity_id: switch.boiler
+        to: "on"
+    action:
+      - service: timer.start
+        entity_id: timer.boiler_timer
+        data:
+          duration: "{{ states('input_number.boiler_duration') | int }}:00"
+
+  - alias: "🛑 כיבוי הדוד בסיום הטיימר"
+    description: "כיבוי אוטומטי של הדוד כאשר הטיימר מסתיים"
+    trigger:
+      - platform: event
+        event_type: timer.finished
+        event_data:
+          entity_id: timer.boiler_timer
+    action:
+      - service: switch.turn_off
+        entity_id: switch.boiler
+
+  - alias: "🔄 איפוס משך הטיימר אחרי כיבוי הדוד"
+    description: "כאשר הדוד נכבה, מאפס את הסליידר לערך ברירת מחדל"
+    trigger:
+      - platform: state
+        entity_id: switch.boiler
+        to: "off"
+    action:
+      - service: input_number.set_value
+        target:
+          entity_id: input_number.boiler_duration
+        data:
+          value: 30
+      - service: timer.finish
+        target:
+          entity_id: timer.boiler_timer
+
+# ✅ 4. כרטיס Lovelace להצגת הבקרה
+lovelace:
+  views:
+    - title: "שליטה על הדוד"
+      icon: mdi:water-boiler
+      path: boiler_control
+      cards:
+        - type: entities
+          title: "💡 בקרת דוד"
+          entities:
+            - entity: switch.boiler
+              name: "מצב הדוד"
+            - entity: input_number.boiler_duration
+              name: "⏳ משך הפעלה"
+            - entity: timer.boiler_timer
+              name: "⏱ זמן נותר"
+
+# ✅ 5. תמיכה ב-Slider-Entity-Row (אם התקנת דרך HACS)
+  - type: entities
+    title: "🔥 בקרת דוד מתקדמת"
+    entities:
+      - entity: switch.boiler
+        name: "מצב הדוד"
+      - type: custom:slider-entity-row
+        entity: input_number.boiler_duration
+        name: "קביעת זמן חימום"
+        full_row: true
+      - entity: timer.boiler_timer
+        name: "⏳ זמן נותר"
