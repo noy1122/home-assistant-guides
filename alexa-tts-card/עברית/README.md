@@ -89,3 +89,5 @@ tts:
 אם נתקלת בבעיה או רוצה לשפר את ההגדרות, ניתן לפתוח **Issue** או לשלוח **Pull Request**! 🚀  
 
 🔗 **עקוב אחרי מדריכים נוספים ל-Home Assistant!**  
+📣 **הצטרפו לקבוצת הפייסבוק שלנו:**  **Home Assistant - קהילה ומדריכים!**   
+🔗 **https://www.facebook.com/groups/homeassistant.israel**
