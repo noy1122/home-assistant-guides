@@ -155,4 +155,5 @@ To ensure images are displayed correctly, upload them manually to `/local/`.
 📬 **Have questions or suggestions? Let us know in the comments!**  
 
 ---
-
+📣 **Join our Facebook group:**  **Home Assistant - קהילה ומדריכים** 
+🔗 **https://www.facebook.com/groups/homeassistant.israel**  
