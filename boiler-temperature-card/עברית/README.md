@@ -142,3 +142,5 @@ label: |
 אם יש לך שאלות או שיפורים להציע, נשמח לשמוע! ניתן לפתוח **Issue** או **Pull Request** בפרויקט. 🚀  
 
 🔗 **עקוב אחרינו לעוד פרויקטים של Home Assistant!**  
+📣 **הצטרפו לקבוצת הפייסבוק שלנו:**  **Home Assistant - קהילה ומדריכים!**   
+🔗 **https://www.facebook.com/groups/homeassistant.israel**
