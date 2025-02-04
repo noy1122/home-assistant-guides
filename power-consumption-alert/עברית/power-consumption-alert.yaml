@@ -1,0 +1,65 @@
+#################################################################
+# ⚡ התראה על צריכת חשמל גבוהה ב-Home Assistant
+# 🚀 תיאור: התראה עם 5 המכשירים הצורכים הכי הרבה חשמל כאשר
+#          הצריכה הכוללת חורגת מסף מסוים
+#################################################################
+
+# ✅ 1. יצירת חיישן לצריכת חשמל כוללת
+template:
+  - sensor:
+      - name: "צריכת חשמל נוכחית"
+        unit_of_measurement: 'W'
+        state_class: measurement
+        device_class: power
+        state: >
+          {{ (
+            states('sensor.boiler_power')|float(0) +  
+            states('sensor.ac_power')|float(0) +  
+            states('sensor.fridge_power')|float(0) +  
+            states('sensor.oven_power')|float(0) +  
+            states('sensor.washing_machine_power')|float(0)  
+          ) | round(0) }}
+
+# ✅ 2. אוטומציה לשליחת התראה עם 5 הצרכנים הגדולים
+automation:
+  - alias: "התראה על צריכת חשמל גבוהה"
+    description: "שליחת הודעה עם 5 הצרכנים הגדולים כאשר הצריכה חורגת מסף"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.צריכת_חשמל_נוכחית
+        above: 8000
+    action:
+      - service: notify.mobile_app_noy_iphone16_pro
+        data:
+          title: "⚠️ התראה על צריכת חשמל גבוהה"
+          message: >-
+            {% set entities = [
+              'sensor.boiler_power',
+              'sensor.ac_power',
+              'sensor.fridge_power',
+              'sensor.oven_power',
+              'sensor.washing_machine_power'
+            ] %}
+
+            {% set raw_data = namespace(items=[]) %}
+            {% for entity_id in entities %}
+              {% set state = states(entity_id) | float(default=-1) %}
+              {% if state >= 0 %}
+                {% set raw_data.items = raw_data.items + [{
+                  'id': entity_id,
+                  'name': state_attr(entity_id, 'friendly_name') | default(entity_id),
+                  'value': state
+                }] %}
+              {% endif %}
+            {% endfor %}
+
+            {% set sorted_data = raw_data.items | sort(attribute='value', reverse=true) %}
+
+            {% if sorted_data | count > 0 %}
+              🏆 **5 הצרכנים המובילים:**
+              {% for item in sorted_data[:5] %}
+              🔸 {{ item.name | replace("_", " ") | replace("צריכת חשמל", "") | trim }}: {{ item.value | round(1) }}W
+              {% endfor %}
+            {% else %}
+              ❌ **לא נמצאו נתוני צריכה**
+            {% endif %}
