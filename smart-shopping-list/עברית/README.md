@@ -176,4 +176,5 @@ cards:
 📬 **יש שאלות או שיפורים? ספרו בתגובות!**  
 
 ---
-
+📣 **הצטרפו לקבוצת הפייסבוק שלנו:**  **Home Assistant - קהילה ומדריכים!**   
+🔗 **https://www.facebook.com/groups/homeassistant.israel**
