@@ -89,3 +89,5 @@ With this card, you can enter text, and Alexa will **speak the message aloud** o
 If you have any issues, open an issue or submit a pull request! 🚀  
 
 🔗 **Follow for more Home Assistant projects!**  
+📣 **Join our Facebook group:**  **Home Assistant - קהילה ומדריכים** 
+🔗 **https://www.facebook.com/groups/homeassistant.israel**  
