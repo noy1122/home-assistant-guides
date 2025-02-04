@@ -68,3 +68,6 @@ Feel free to open an issue if you have questions or want to suggest new guides!
 
 ---  
 🔗 **Follow me for more Home Assistant content!**  
+
+📣 **Join our Facebook group:**  **Home Assistant - קהילה ומדריכים** 
+🔗 **https://www.facebook.com/groups/homeassistant.israel**  
