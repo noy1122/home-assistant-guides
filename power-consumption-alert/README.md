@@ -113,6 +113,5 @@ action:
 ✅ **Customizable based on your devices and alert preferences.**  
 
 ---
-
 📣 **Join our Facebook group:**  **Home Assistant - קהילה ומדריכים** 
 🔗 **https://www.facebook.com/groups/homeassistant.israel**  
