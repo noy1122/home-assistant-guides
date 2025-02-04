@@ -1,1 +1,12 @@
+#################################################################
+# 🔊 כרטיס מדיה חכם לאלקסה עם תמיכה ב-TTS ב-Home Assistant
+# 🚀 תיאור: שילוב Alexa עם Home Assistant כולל כרטיס Lovelace עם תמיכה ב-TTS
+#################################################################
 
+type: custom:mini-media-player
+entity: media_player.noy_s_2nd_echo_dot_2
+artwork: full-cover
+icon: mdi:amazon
+tts:
+  platform: alexa
+  entity_id: media_player.noy_s_2nd_echo_dot_2
