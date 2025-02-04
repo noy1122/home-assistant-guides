@@ -1,0 +1,86 @@
+#################################################################
+# 🛒 רשימת קניות חכמה ב-Home Assistant
+# 🚀 תיאור: מאפשר הוספת מוצרים לרשימת הקניות בלחיצה אחת
+#################################################################
+
+# ✅ 1. הפעלת רכיב רשימת קניות (Shopping List)
+shopping_list:
+
+# ✅ 2. כרטיס Lovelace להצגת רשימת הקניות עם כפתורי הוספה
+lovelace:
+  views:
+    - title: "רשימת קניות"
+      icon: mdi:cart
+      path: shopping
+      cards:
+        - type: vertical-stack
+          cards:
+            - type: grid
+              title: "הוספת מוצרים בלחיצה"
+              columns: 2
+              square: false
+              cards:
+                - type: custom:button-card
+                  name: "חלב"
+                  entity_picture: /local/milk.png
+                  show_entity_picture: true
+                  show_name: true
+                  styles:
+                    name:
+                      - font-size: 14px
+                      - font-weight: bold
+                      - color: black
+                  tap_action:
+                    action: call-service
+                    service: shopping_list.add_item
+                    data:
+                      name: חלב
+
+                - type: custom:button-card
+                  name: "לחם"
+                  entity_picture: /local/bread.png
+                  show_entity_picture: true
+                  show_name: true
+                  styles:
+                    name:
+                      - font-size: 14px
+                      - font-weight: bold
+                      - color: black
+                  tap_action:
+                    action: call-service
+                    service: shopping_list.add_item
+                    data:
+                      name: לחם
+
+                - type: custom:button-card
+                  name: "ביצים"
+                  entity_picture: /local/eggs.png
+                  show_entity_picture: true
+                  show_name: true
+                  styles:
+                    name:
+                      - font-size: 14px
+                      - font-weight: bold
+                      - color: black
+                  tap_action:
+                    action: call-service
+                    service: shopping_list.add_item
+                    data:
+                      name: ביצים
+
+            - type: shopping-list
+              title: "רשימת הקניות שלי"
+
+
+# ✅ 3. שיפור הכרטיס 
+type: vertical-stack
+cards:
+  - type: grid
+    title: "הוספת מוצרים בלחיצה"
+    columns: 2
+    square: false
+    cards:
+      - (הכפתורים שהוספת קודם)
+
+  - type: shopping-list
+    title: "רשימת הקניות"
